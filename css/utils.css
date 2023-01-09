@@ -10,10 +10,3 @@
 	clear: both;
 	display: table;
 }
-
-/* SM QUERY */
-@media screen and (max-width: 650px) {
-	:root {
-		--navBarWidth: 50px
-	}
-}

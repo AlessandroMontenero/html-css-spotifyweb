@@ -1,19 +1,36 @@
 /* ROOT */
 
 :root {
-    --headerHeight: 120px;
-    --footerHeight: 120px;
+    --headerHeight: 90px;
+    --footerHeight: 90px;
     --navBarWidth: 250px;
 }
+
 
 /* HEADER */
 header {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.25);
     height: var(--headerHeight);
+    line-height: var(--headerHeight);
     width: calc(100% - var(--navBarWidth));
     right: 0;
+    text-align: right;
 }
+    /* HEADER BUTTON */
+    .headerButton {
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 30px;
+        border-width: 1px;
+        border-color: white;
+        border-style: solid;
+        padding: 1rem 2rem;
+    }
+
+    .headerButton a {
+        color: white;
+        text-decoration: none;
+    }
 
 /* MAIN */
 main {
@@ -22,19 +39,54 @@ main {
     display: flex;
 }
 
-/* USER VIEW */
-.userView {
-    margin-top: var(--headerHeight);
-    width: calc(100% - var(--navBarWidth));
-}
-    
-
 /* SIDEBAR */
 .sideBar {
     width: var(--navBarWidth);
     background-color: black;
     height: calc(100vh - var(--footerHeight));
 }
+
+    /* LOGO */
+    .logoBox {
+        height: var(--headerHeight);
+        box-sizing: border-box;
+        line-height: var(--headerHeight);
+    }
+    
+    .logoBg {
+        padding: 20px 50px 20px 20px
+    }
+
+    .logoXs {
+        display: none;
+        padding: 10px 20px;
+    }
+
+/* SIDEBAR SMALL */
+@media screen and (max-width: 768px) {
+	:root {
+		--navBarWidth: 100px;
+	}
+
+    .logoBox {
+        height: var(--navBarWidth);
+    }
+
+    .logoBg {
+        display: none;
+    }
+
+    .logoXs {
+        display: block;
+    }
+}
+
+/* USER VIEW */
+.userView {
+    margin-top: var(--headerHeight);
+    width: calc(100% - var(--navBarWidth));
+}
+    
 
 /* FOOTER */
 footer {
