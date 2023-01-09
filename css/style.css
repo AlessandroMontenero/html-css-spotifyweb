@@ -6,7 +6,6 @@
     --navBarWidth: 250px;
 }
 
-
 /* HEADER */
 header {
     position: fixed;
@@ -62,6 +61,21 @@ main {
         padding: 10px 20px;
     }
 
+    /* NAV LIST */
+    .navItem {
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+    }
+    .navImg {
+        height: 100%;
+        width: 30px;
+    }
+    .navText {
+        margin-left: 10px;
+        color: white;
+    }
+
 /* SIDEBAR SMALL */
 @media screen and (max-width: 768px) {
 	:root {
@@ -78,6 +92,18 @@ main {
 
     .logoXs {
         display: block;
+    }
+
+    .navItem {
+        margin: 5px 0;
+        padding: 5px 25px;
+
+    }
+    .navImg {
+        width: 100%;
+    }
+    .navText {
+        display: none;
     }
 }
 
