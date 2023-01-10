@@ -10,3 +10,44 @@
 	clear: both;
 	display: table;
 }
+
+html {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* FONTS */
+
+h2 {
+	font-size: 1.3rem;
+}
+
+h3 {
+	margin: 8px 0;
+	font-size: 0.8rem;
+	font-weight: 400;
+
+}
+
+h4 {
+	font-size: 0.6rem;
+	font-weight: lighter;
+	margin: 2px 0 ;
+}
+
+/* ICONS */
+.fa-play {
+	border-radius: 50px;
+	border: 2px solid white;
+	padding: 5px 8px;
+	font-size: 1.5rem;
+}
+
+footer .fa-solid {
+	font-size: small;
+}

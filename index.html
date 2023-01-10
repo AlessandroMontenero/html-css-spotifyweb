@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Web</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/utils.css" />
@@ -15,48 +28,141 @@
   <body>
     <!-- HEADER -->
     <header>
-      <button class="headerButton"><a href="">EFFETUA L'UPGRADE</a></button>
+      <button class="headerButton"><a href="">EFFETTUA L'UPGRADE</a></button>
     </header>
     <!-- MAIN CONTENT -->
     <main>
       <!-- SIDEBAR -->
       <div class="sideBar">
-        <div class="logoBox">
-          <div class="logoBg">
-            <img src="./img/logo.svg" alt="" />
-          </div>
-          <div class="logoXs">
-            <img src="./img/logo-small.svg" alt="" />
-          </div>
-        </div>
         <!-- SIDEBAR NAVIGATION BUTTONS -->
         <nav class="sideNav">
+          <div class="logoBox">
+            <div class="logoBg">
+              <img src="./img/logo.svg" alt="" />
+            </div>
+            <div class="logoXs">
+              <img src="./img/logo-small.svg" alt="" />
+            </div>
+          </div>
           <div class="navList">
-            <div class="navItem">
+            <div class="navItem active">
               <div class="navImg">
                 <img src="./img/home.svg" alt="" />
               </div>
-              <div class="navText"><h3>Home</h3></div>
+              <div class="navText">
+                <a href="#"><h3>Home</h3></a>
+              </div>
             </div>
             <div class="navItem">
               <div class="navImg">
                 <img src="./img/search.svg" alt="" />
               </div>
-              <div class="navText"><h3>Cerca</h3></div>
+              <div class="navText">
+                <a href="#"><h3>Cerca</h3></a>
+              </div>
             </div>
             <div class="navItem">
               <div class="navImg">
                 <img src="./img/libreria.svg" alt="" />
               </div>
-              <div class="navText"><h3>La tua libreria</h3></div>
+              <div class="navText">
+                <a href="#"><h3>La tua libreria</h3></a>
+              </div>
+            </div>
+            <div class="playlist">
+              <div class="title"><h3>PLAYLIST</h3></div>
+              <div class="playlistItem">
+                <i class="fa-solid fa-plus"></i>
+                <h3>Crea Playlist</h3>
+              </div>
+              <div class="playlistItem">
+                <h3>Nome Playlist</h3>
+              </div>
+              <div class="playlistItem">
+                <h3>Nome Playlist</h3>
+              </div>
+              <div class="playlistItem">
+                <h3>Nome Playlist</h3>
+              </div>
+              <div class="playlistItem">
+                <h3>Nome Playlist</h3>
+              </div>
+              <div class="playlistItem">
+                <h3>Nome Playlist</h3>
+              </div>
+              <div class="playlistItem">
+                <h3>Nome Playlist</h3>
+              </div>
+              <div class="playlistItem">
+                <h3>Nome Playlist</h3>
+              </div>
             </div>
           </div>
         </nav>
+        <!-- NAV FOOTER -->
+        <div class="navFooter">
+          <div class="installApp">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <a href="#"><h3>Installa app</h3></a>
+          </div>
+          <hr />
+          <div class="userProfile">
+            <div class="userImg">
+              <img src="./img/profile.svg" alt="" />
+            </div>
+            <div class="userID">
+              <h2>John Doe</h2>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- USER VIEW -->
       <section class="userView"></section>
     </main>
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+      <div class="songDescription">
+        <div class="songCover">
+          <img src="./img/sinister.jpeg" alt="" />
+        </div>
+        <div class="songInfo">
+          <div class="songTitle">
+            <h3>Sinister</h3>
+          </div>
+          <div class="songAuthor">
+            <h4>Brano Nome</h4>
+          </div>
+        </div>
+        <div class="heartFolder">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+      </div>
+      <div class="playerControls">
+        <div class="Controls">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+        <div class="timeControls timeScore">
+          <div class="timeScored"><h4>0:25</h4></div>
+          <div class="progressBar">
+            <div class="progressScore"></div>
+          </div>
+          <div class="timeRemain"><h4>4:25</h4></div>
+        </div>
+      </div>
+      <div class="audioControls">
+        <i class="fa-solid fa-list"></i>
+        <i class="fa-solid fa-display"></i>
+        <i class="fa-solid fa-volume-high"></i>
+
+        <div class="progressBar volume">
+          <div class="progressScore"></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
