@@ -80,6 +80,10 @@ main {
     text-align: center;
 }
 
+.coverContainer {
+    position: relative
+}
+
 .album img {
     width: 100%;
 }
@@ -102,6 +106,23 @@ main {
     border-radius: 50%;
 }
 
+.album .coverContainer:hover img {
+    filter: brightness(50%);
+}
+
+
+.hoverPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    display: none;
+}
+
+.album .coverContainer:hover .hoverPlay {
+    display: block;
+}
 
 
 /* SIDEBAR */
