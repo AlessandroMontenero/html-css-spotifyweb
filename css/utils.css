@@ -41,13 +41,22 @@ h4 {
 }
 
 /* ICONS */
-.fa-play {
-	border-radius: 50px;
-	border: 2px solid white;
-	padding: 5px 8px;
+footer .fa-circle-play {
 	font-size: 1.5rem;
+}
+
+footer .fa-circle-play:hover {
+	transform: scale(1.2);
 }
 
 footer .fa-solid {
 	font-size: small;
+}
+
+.heartFolder i {
+	opacity: 50%;
+}
+
+.heartFolder i:hover {
+	opacity: 100%;
 }
