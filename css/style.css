@@ -8,6 +8,8 @@
     --headerHeight: 90px;
     --footerHeight: 90px;
     --navBarWidth: 250px;
+    /* TRANSITIONS */
+    --transitionTimeShort: 0.2s;
 }
 
 /* HEADER */
@@ -58,6 +60,7 @@ main {
 
 .userViewNav a {
     opacity: 50%;
+    transition: opacity var(--transitionTimeShort);
 }
 
 .userViewNav a:hover {
@@ -93,6 +96,9 @@ main {
 
 .album img {
     width: 100%;
+    filter: brightness(100%);
+    transition: filter var(--transitionTimeShort);
+
 }
 
 .album h3 {
@@ -124,11 +130,13 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-    display: none;
+    opacity: 0;
+    transition: opacity var(--transitionTimeShort);
+
 }
 
 .album .coverContainer:hover .hoverPlay {
-    display: block;
+    opacity: 100%;
 }
 
 
@@ -170,6 +178,8 @@ main {
         margin-bottom: 5px;
         align-items: center;
         opacity: 50%;
+        transition: opacity var(--transitionTimeShort);
+
     }
     .navItem.active {
         opacity: 90%;
@@ -202,6 +212,8 @@ main {
         opacity: 50%;
         display: flex;
         align-items: center;
+        transition: opacity var(--transitionTimeShort);
+
     }
 
     .playlistItem:hover {
@@ -282,6 +294,8 @@ main {
         opacity: 50%;
         display: flex;
         align-items: center;
+        transition: opacity var(--transitionTimeShort);
+
     }
 
     .installApp i {
